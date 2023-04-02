@@ -5,7 +5,7 @@ import WeatherInfo from './components/WeatherInfo';
 export default function App() {
   return (
     <View style={{ flex: 1 }}>
-      <WeatherInfo />
+      <WeatherInfo.js/>
     </View>
   );
 }
