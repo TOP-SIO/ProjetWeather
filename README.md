@@ -36,7 +36,7 @@ Activez l'interface I2C en utilisant la commande sudo raspi-config et sélection
 
 Clonez le repository Github contenant le code source en utilisant la commande git clone https://github.com/TOP-SIO/ProjetWeather.git
 
-Naviguez jusqu'au dossier contenant le code source et installez les packages requis en utilisant la commande sudo pip3 install -r requirements.txt
+Naviguez jusqu'au dossier contenant le code source et installez les packages requis en utilisant la commande `sudo pip3 install -r requirements.txt`
 
 Exécutez le script principal en utilisant la commande python3 main.py
 
