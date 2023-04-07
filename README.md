@@ -30,7 +30,7 @@ Assurez-vous que tout est correctement branché et fixé
 ## Configuration
 Assurez-vous que Raspbian est installé sur votre Raspberry Pi
 
-Installez les packages nécessaires en utilisant la commande sudo apt-get install python3-pip git i2c-tools
+Installez les packages nécessaires en utilisant la commande `chmod +x install_packages.sh` et `./install_packages.sh -y`
 
 Activez l'interface I2C en utilisant la commande sudo raspi-config et sélectionnez l'option "Interfacing Options" > "I2C" > "Yes"
 
