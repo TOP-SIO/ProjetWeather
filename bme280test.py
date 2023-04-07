@@ -45,4 +45,4 @@ while True:
 
   mydb.commit()
   
-  time.sleep(30)
+  time.sleep(1800)
