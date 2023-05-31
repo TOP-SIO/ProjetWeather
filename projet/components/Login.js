@@ -1,4 +1,6 @@
-import { View, Text, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, TextInput, TouchableOpacity, Dimensions } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
 
 export const Login = () => {
   return (
@@ -39,11 +41,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#301F3C',
-    height:'75%',
+
   },
   logo: {
-    marginTop:'5%',
-    width: '20%', // set the width and height that works for your logo
+    marginTop: height * 0.05, 
+    width: width * 0.2, 
     resizeMode: 'contain',
   },
   loginWrapper: {
@@ -52,7 +54,7 @@ const styles = StyleSheet.create({
     borderRadius: 41,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '5%',
+    padding: height * 0.05, 
   },
   login: {
     width: '100%',
@@ -63,7 +65,7 @@ const styles = StyleSheet.create({
     lineHeight: 41,
     color: '#FFFFFF',
     fontFamily: 'Ubuntu',
-    marginBottom: '5%',
+    margin: height*0.05,
   },
   inputWrapper: {
     width: '80%',
@@ -75,8 +77,8 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     fontSize: 20,
     fontFamily: 'Ubuntu',
-    paddingHorizontal: '6%',
-    marginBottom: '2.5%',
+    paddingHorizontal: width * 0.06, 
+    marginBottom: height * 0.025, 
   },
   button: {
     width: '50%',
@@ -85,7 +87,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '1%',
+    marginTop: height * 0.01,
   },
   buttonText: {
     fontSize: 24,
@@ -98,6 +100,6 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     color: '#FFFFFF',
     fontFamily: 'Ubuntu',
-    marginTop: '20%',
+    marginTop: height * 0.05, 
   },
 });

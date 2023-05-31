@@ -1,22 +1,24 @@
-import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import WeatherInfo from './components/WeatherInfo';
-import ChambreInfo from './components/ChambreInfo';
+import { Dashboard } from './components/Dashboard';
+import { Login } from './components/Login';
 
-export default function App() {
+
+
+export default function LoginApp() {
   return (
     <View style={[styles.container, { backgroundColor: '#301F3C' }]}>
-      <WeatherInfo />
-      <ChambreInfo />
+
+      <Dashboard/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent : 'space-around',
-    maxWidth: 800,
-    maxHeight: 400,
+    backgroundColor: '#301F3C',
   }
 });
+
